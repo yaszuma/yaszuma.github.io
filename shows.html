@@ -8,14 +8,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<!-- Simple CSS -->
-		<link rel="stylesheet" type="text/css" href="resources/css/style_index.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/style_shows.css">
 		<link rel="stylesheet" type="text/css" href="resources/css/style_nav.css">
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
-		<link href="https://fonts.googleapis.com/css?family=Quicksand" type="text/css" rel="stylesheet" >
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans" type="text/css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<!-- Simple Scripts -->
-		<script src="resources/scripts/index.js"></script>
+		<script src="resources/scripts/nav.js"></script>
+        <script src="resources/scripts/shows.js"></script>
 	</head>
 
 	<body>
@@ -27,18 +29,6 @@
 				<a class="active" id="mainIconMenu" href="../shows.html"><i class="fa fa-fw fa-tv"></i> Shows</a> 
 				<a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
 				<a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
-			<!--
-			<div class="dropdown">
-			  <button class="dropbtn" onclick="myDropdown()">Dropdown
-				<i class="fa fa-caret-down"></i>
-			  </button>
-			  <div class="dropdown-content" id="myDropdown">
-				<a href="#">Link 1</a>
-				<a href="#">Link 2</a>
-				<a href="#">Link 3</a>
-			  </div>
-			</div> 
-			-->
 			</div>
 			<a href="javascript:void(0);" class="icon" onclick="myMobileMenu()">
 				<i class="fa fa-bars"></i>
@@ -46,83 +36,93 @@
 		</div>
 		<!-- End of Navigation Bar -->
 		
-		<div class = "coverImage"></div>
+        <div id="Default" class="tabcontent">
+            <h1>Shows We have Watched Together</h1>
+        </div>
 
-		<div>
-		  <div class="title">
-			<ul>
-			  <li>
-				❤️ Anniversery ❤️
-			  </li>
-			</ul>
-		  </div>
+		<div id="Movies" class="tabcontent">
+            <h1>Movies</h1>
+        </div>
 
-		  <div class="month">      
-			<ul>
-			  <li>
-				August<br>
-				<span style="font-size:18px">2020</span>
-			  </li>
-			</ul>
-		  </div>
+        <div id="Animes" class="tabcontent">
+            <h1>Animes</h1>
+        </div>
 
-		  <ul class="weekdays">
-			<li>Mo</li>
-			<li>Tu</li>
-			<li>We</li>
-			<li>Th</li>
-			<li>Fr</li>
-			<li>Sa</li>
-			<li>Su</li>
-		  </ul>
+        <div id="Dramas" class="tabcontent">
+            <h1>Dramas</h1>
+        </div>
 
-		  <ul class="days">  
-			<li> </li>
-			<li> </li>
-			<li> </li>
-			<li> </li>
-			<li> </li>
-			<li> </li>
-			<li><span class="saturday">1</span></li>
-			<li><span class="sunday">2</span></li>
-			<li>3</li>
-			<li>4</li>
-			<li>5</li>
-			<li>6</li>
-			<li>7</li>
-			<li><span class="saturday active">8</span></li>
-			<li><span class="sunday">9</span></li>
-			<li>10</li>
-			<li>11</li>
-			<li>12</li>
-			<li>13</li>
-			<li>14</li>
-			<li><span class="saturday">15</span></li>
-			<li><span class="sunday">16</span></li>
-			<li>17</li>
-			<li>18</li>
-			<li>19</li>
-			<li>20</li>
-			<li>21</li>
-			<li><span class="saturday">22</span></li>
-			<li><span class="sunday">23</span></li>
-			<li>24</li>
-			<li>25</li>
-			<li>26</li>
-			<li>27</li>
-			<li>28</li>
-			<li><span class="saturday">29</span></li>
-			<li><span class="sunday">30</span></li>
-			<li>31</li>
-		  </ul>
-		  
-		  <div class="bottom">
-			<ul>
-			  <li>
+        <div id="American" class="tabcontent">
+            <h1>American</h1>
+        </div>
 
-			  </li>
-			</ul>
-		  </div>
-		</div>
+        <button class="tablink" onclick="openShow('Movies', 'Movies_table', this, '#ffb5b5')">Movies</button>
+        <button class="tablink" onclick="openShow('Animes', 'Default_table', this, '#b5c5ff')">Animes</button>
+        <button class="tablink" onclick="openShow('Dramas', 'Default_table', this, '#ffb5b5')">Dramas</button>
+        <button class="tablink" onclick="openShow('American', 'Default_table', this, '#b5c5ff')">American</button>
+
+        <!-- Table for EVERYTHING -->
+        <div id="Default_table" class="tabcontenttable">
+            <table>
+                <tr>
+                    <th>Assignment</th>
+                    <th>Project Title</th>
+                </tr>
+                <tr>
+                    <td>Original Design</td>
+                    <td><a href="/OriginalDesign">Happy Man</a></td>
+                </tr>
+                <tr>
+                    <td>Lightning</td>
+                    <td><a href="/Lightning">Mjölnir</a></td>
+                </tr>
+                <tr>
+                    <td>Dice</td>
+                    <td><a href="/Dice">Luck of the Dice</a></td>
+                </tr>
+                <tr>
+                    <td>Chemotaxis</td>
+                    <td><a href="/Chemotaxis">Anthole</a></td>
+                </tr>
+                <tr>
+                    <td>Starfield</td>
+                    <td><a href="/Starfield">Spring Time</a></td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- Table for MOVIES -->
+        <div id="Movies_table" class="tabcontenttable">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Date Watched</th>
+                </tr>
+                <tr>
+                    <td><a href="https://www.imdb.com/title/tt6587640/" target="_blank" >Trolls World Tour (2020)</a></td>
+                    <td>September 14, 2020</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.imdb.com/title/tt1946502/" target="_blank" >UglyDolls</a></td>
+                    <td>September 14, 2020</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.imdb.com/title/tt8503618/" target="_blank" >Hamilton (2020)</a></td>
+                    <td>August 10, 2020</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.imdb.com/title/tt0475293/" target="_blank" >High School Musical (2006)</a></td>
+                    <td>September 16, 2020</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.imdb.com/title/tt3521164/" target="_blank" >Moana (2016)</a></td>
+                    <td>August 10, 2020</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.imdb.com/title/tt7146812/" target="_blank" >Onward (2020)</a></td>
+                    <td>August 11, 2020</td>
+                </tr>
+            </table>
+        </div>
 	</body>
 </html>
