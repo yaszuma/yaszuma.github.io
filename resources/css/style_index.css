@@ -1,0 +1,131 @@
+body, html {
+	height: 100%;
+  margin: 0;
+  font-family: "Quicksand", "Courier New";
+}
+
+ul {list-style-type: none;}
+
+.navbar {
+	font-family: "Quicksand", "Courier New";
+}
+
+.coverImage {
+	/* Image */
+  background-image: url("../images/First_Date_Out_Crop2.jpg");
+	/*background-image: url("https://lh3.googleusercontent.com/9M4qEjkQ4uqCRq2Jmp1pO_t3mItWlPeWKXwIQHsFr4qa6IEZp4TK2HnI33cncOSCzw_63_Bmg_32-258Tdj8dDMFVHqL10U3Atii1WCxR8laWRZBhMbXpOmtd-qePjPoUtfD2gG_M1OiJvbZ_OjRuFEvOtPqrMYFrQ3HtiDPANNuy7rgacy6nThCmLO46YlfetaTTIT2qIWG_ypp9w6Uv9U2b4A7nAFN_wyB0sN7h-T5NcFIBNPgkhItECEckXXypAqAL-a8cbMrGgt0CijBweI5Cglvj-J6I800FWOzCj2Qd9B4_GtoYa1okYSglAWU_Sq3_NrHfn_EY9Co9gfJnpOSvBgXkFCS69mDjcxaG2w3Fshg8UWvuFQHZeWEnrZgokZXL_zKKJbtgCKigmX6znBRhnnQDbi1SVrQn0_JdBbMx8BtfjboYqKJI1Bf5q9GgT6KzRB61VB93gAMijG8NyOW-XkIby455tm38aaE5TYTGOI7UCjuBWuPhEhFliQbapNnEMMebFTEsEOEy_veW7URHhKfI23Vv2ijtGfn84jfi-iP7eYuTZqT-cyrzjixOKrKOY55UjF4fnTGexBpVBhsS154FN0UTadDtd5nMPV1sSPOduBvoppAzFrptmMkfA2CS8jg8VSTaPKUfUrcwu_o4OoXRQs48tsyRGYc_eW2ACzXML0gIxr5Ctt1xas=w958-h719-no?authuser=0");*/
+	/*background-image: url("images/First_Date_Out_Crop.jpg");*/
+
+	/* Size of Image */
+  height: 100%;
+	width: 100%;
+
+	/* Parallax Scrolling Effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title {
+  margin: 0;
+  padding: 10px 25px;
+  background-color: #fa3c3c;
+  text-align: center;
+  font-family: "Quicksand", "Courier New";
+}
+
+.title ul {
+  margin: 0;
+  padding: 0;
+}
+
+.title ul li {
+  display: inline-block;
+  width: 100%;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.month {
+  padding: 70px 0;
+  width: 100%;
+  background: #343A40;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color:white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.weekdays {  
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #000;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #fa3c3c;
+  color: white !important
+}
+
+.days li .saturday {
+  color: #777;
+}
+
+.days li .sunday {
+  color: #F00;
+}
+
+.bottom {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #343A40;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+  .coverImage {background-image: url("../images/First_Date_Out.jpg");}
+}
