@@ -6,10 +6,6 @@ body, html {
 
 ul {list-style-type: none;}
 
-.navbar {
-	font-family: "Quicksand", "Courier New";
-}
-
 .coverImage {
 	/* Image */
   background-image: url("../images/First_Date_Out_Crop2.jpg");
