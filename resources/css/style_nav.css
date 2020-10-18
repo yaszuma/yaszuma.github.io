@@ -28,6 +28,10 @@
   background-color: transparent;
 }
 
+#mainIcon {
+  display: none;
+}
+
 /*
 .dropdown {
   float: none;
@@ -110,5 +114,13 @@
   .topnav a:hover, .topnav a.icon:hover {
     background-color: #ddd;
     color: black;
+  }
+
+  #mainIcon {
+    display: block;
+  }
+
+  #mainIconMenu {
+    display: none;
   }
 }
