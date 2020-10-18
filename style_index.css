@@ -1,0 +1,31 @@
+body, html {
+	height: 100%;
+}
+
+table {
+	font-family: "Quicksand", "Courier New";
+}
+td {
+	vertical-align: top;
+}
+
+.navbar {
+	font-family: "Quicksand", "Courier New";
+}
+
+.coverImage {
+	/* Image */
+	background-image: url("images/GWC_logo_2016_on_Navy_.jpg");
+	/*background-image: url("images/GWC_logo_2016_.png");*/
+
+	/* Size of Image */
+	height: 100%;
+	width: 100%;
+
+	/* Parallax Scrolling Effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+

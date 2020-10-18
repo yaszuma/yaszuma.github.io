@@ -1,0 +1,28 @@
+body {
+  text-align: center;
+  font-family: "Quicksand", "Courier New";
+  background-image: url("https://imgur.com/yUBibkS.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+p, a, th, td{
+  color: black;
+  text-decoration: none;
+}
+
+table, th, td {
+  width: 100%;
+  text-align: center;
+  border: 1px solid black;
+}
+
+th, td, a{
+  padding: 10px;
+  white-space: nowrap;
+}
+
+#projects {
+  padding: 1% 20% 10% 20%;
+}
