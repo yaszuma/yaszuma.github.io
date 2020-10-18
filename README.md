@@ -1,2 +1,2 @@
-# LowellGirlsWhoCode
-Webpage for Lowell Girls Who Code Club
+# kent-and-alexis
+Webpage for Kent and Alexis's Relationship
