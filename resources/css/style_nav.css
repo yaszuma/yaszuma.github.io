@@ -73,8 +73,9 @@
   display: block;
 }
 
-.active {
-  background-color: #fa3c3c;
+.active, .active:hover {
+  background-color: #fa3c3c !important;
+  color: white !important
 }
 
 @media screen and (max-width: 500px) {
