@@ -18,15 +18,24 @@
   position: absolute;
   right: 0;
   top: 0;
+  background-color: transparent;
+  color: white;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
   background-color: black;
 }
 
+.navbar #topLink a:hover {
+  background-color: #fa3c3c 
+} 
+
+
 .topnav a.icon:hover {
   background-color: transparent;
+  color: white;
 }
+
 
 #mainIcon {
   display: none;
@@ -78,49 +87,61 @@
 }
 
 .active, .active:hover {
-  background-color: #fa3c3c !important;
-  color: white !important
+  background-color: #fa3c3c;
+  color: white 
 }
 
 @media screen and (max-width: 500px) {
-  /*
-  .navbar a {
-    float: none;
-    display: block;
-  }
-  */
-  
-  .topnav #myLinks {
-    display: none;
-  }
+    /*
+    .navbar a {
+        float: none;
+        display: block;
+    }
+    */
+    
+    .topnav #myLinks {
+        display: none;
+    }
 
-  .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    float: none;
-    text-align: left;
-    display: block;
-  }
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        float: none;
+        text-align: left;
+        display: block;
+    }
 
-  .topnav a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 
-  .topnav a:hover, .topnav a.icon:hover {
-    background-color: #ddd;
-    color: black;
-  }
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
 
-  #mainIcon {
-    display: block;
-  }
+    /*
+    .topnav a.icon:hover {
+        background-color: #343A40;
+        color: white;
+    }
+    */
 
-  #mainIconMenu {
-    display: none;
-  }
+    #mainIcon {
+        display: block;
+    }
+
+    #mainIconMenu {
+        display: none;
+    }
+
+    .active, .active:hover {
+        background-color: #fa3c3c !important;
+        color: white !important
+    }
 }

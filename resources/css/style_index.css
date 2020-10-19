@@ -115,13 +115,20 @@ ul {list-style-type: none;}
   background-color: #343A40;
 }
 
+.navbar #topLink a {
+    background-color: #fa3c3c !important;
+    color: white !important
+}
+
 /* Add media queries for smaller screens */
 @media screen and (max-width:720px) {
   .weekdays li, .days li {width: 13.1%;}
 }
 
 @media screen and (max-width: 420px) {
-  .weekdays li, .days li {width: 12.5%;}
-  .days li .active {padding: 2px;}
-  .coverImage {background-image: url("../images/First_Date_Out.jpg");}
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+    .coverImage {
+        background-image: url("../images/First_Date_Out.jpg");
+    }
 }

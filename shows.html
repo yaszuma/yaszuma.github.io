@@ -23,16 +23,23 @@
 	<body>
 		<!-- Navigation Bar -->
 		<div class="navbar topnav">
-			<a class="active" id="mainIcon" href="../shows.html"><i class="fa fa-fw fa-tv"></i> Shows</a> 
+            <div id="topLink">
+			    <a class="active" id="mainIcon" href="../shows.html"><i class="fa fa-fw fa-tv"></i> Shows</a> 
+            </div>
+
 			<div id="myLinks">
 				<a href="../index.html"><i class="fa fa-fw fa-heart"></i> Home</a> 
 				<a class="active" id="mainIconMenu" href="../shows.html"><i class="fa fa-fw fa-tv"></i> Shows</a> 
-				<a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
-				<a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+				<a href="../music.html"><i class="fa fa-fw fa-music"></i> Music</a> 
+                <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
 			</div>
-			<a href="javascript:void(0);" class="icon" onclick="myMobileMenu()">
-				<i class="fa fa-bars"></i>
-			</a>
+            
+            <div id="iconMenuShows">
+			    <a href="javascript:void(0);" class="icon" onclick="myMobileMenu()">
+				    <i class="fa fa-bars"></i>
+			    </a>
+            </div>
+			
 		</div>
 		<!-- End of Navigation Bar -->
 		
@@ -56,37 +63,41 @@
             <h1>American</h1>
         </div>
 
-        <button class="tablink" onclick="openShow('Movies', 'Movies_table', this, '#ffb5b5')">Movies</button>
+        <button class="tablink" onclick="openShow('Movies', 'Movies_table', this, '#b5c5ff')">Movies</button>
         <button class="tablink" onclick="openShow('Animes', 'Default_table', this, '#b5c5ff')">Animes</button>
-        <button class="tablink" onclick="openShow('Dramas', 'Default_table', this, '#ffb5b5')">Dramas</button>
+        <button class="tablink" onclick="openShow('Dramas', 'Default_table', this, '#b5c5ff')">Dramas</button>
         <button class="tablink" onclick="openShow('American', 'Default_table', this, '#b5c5ff')">American</button>
 
         <!-- Table for EVERYTHING -->
         <div id="Default_table" class="tabcontenttable">
             <table>
                 <tr>
-                    <th>Assignment</th>
-                    <th>Project Title</th>
+                    <th>Name</th>
+                    <th>Type of Show</th>
                 </tr>
                 <tr>
-                    <td>Original Design</td>
-                    <td><a href="/OriginalDesign">Happy Man</a></td>
+                    <td><a href="https://www.imdb.com/title/tt8503618/" target="_blank" >Hamilton (2020)</a></td>
+                    <td>Movie</td>
                 </tr>
                 <tr>
-                    <td>Lightning</td>
-                    <td><a href="/Lightning">Mjölnir</a></td>
+                    <td><a href="https://www.imdb.com/title/tt3521164/" target="_blank" >Moana (2016)</a></td>
+                    <td>Movie</td>
                 </tr>
                 <tr>
-                    <td>Dice</td>
-                    <td><a href="/Dice">Luck of the Dice</a></td>
+                    <td><a href="https://www.imdb.com/title/tt7146812/" target="_blank" >Onward (2020)</a></td>
+                    <td>Movie</td>
                 </tr>
                 <tr>
-                    <td>Chemotaxis</td>
-                    <td><a href="/Chemotaxis">Anthole</a></td>
+                    <td><a href="https://www.imdb.com/title/tt6587640/" target="_blank" >Trolls World Tour (2020)</a></td>
+                    <td>Movie</td>
                 </tr>
                 <tr>
-                    <td>Starfield</td>
-                    <td><a href="/Starfield">Spring Time</a></td>
+                    <td><a href="https://www.imdb.com/title/tt1946502/" target="_blank" >UglyDolls (2019)</a></td>
+                    <td>Movie</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.imdb.com/title/tt0475293/" target="_blank" >High School Musical (2006)</a></td>
+                    <td>Movie</td>
                 </tr>
             </table>
         </div>
@@ -99,28 +110,28 @@
                     <th>Date Watched</th>
                 </tr>
                 <tr>
-                    <td><a href="https://www.imdb.com/title/tt6587640/" target="_blank" >Trolls World Tour (2020)</a></td>
-                    <td>September 14, 2020</td>
-                </tr>
-                <tr>
-                    <td><a href="https://www.imdb.com/title/tt1946502/" target="_blank" >UglyDolls</a></td>
-                    <td>September 14, 2020</td>
-                </tr>
-                <tr>
                     <td><a href="https://www.imdb.com/title/tt8503618/" target="_blank" >Hamilton (2020)</a></td>
-                    <td>August 10, 2020</td>
-                </tr>
-                <tr>
-                    <td><a href="https://www.imdb.com/title/tt0475293/" target="_blank" >High School Musical (2006)</a></td>
-                    <td>September 16, 2020</td>
+                    <td>Aug 10, 2020</td>
                 </tr>
                 <tr>
                     <td><a href="https://www.imdb.com/title/tt3521164/" target="_blank" >Moana (2016)</a></td>
-                    <td>August 10, 2020</td>
+                    <td>Aug 10, 2020</td>
                 </tr>
                 <tr>
                     <td><a href="https://www.imdb.com/title/tt7146812/" target="_blank" >Onward (2020)</a></td>
-                    <td>August 11, 2020</td>
+                    <td>Aug 11, 2020</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.imdb.com/title/tt6587640/" target="_blank" >Trolls World Tour (2020)</a></td>
+                    <td>Sept 14, 2020</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.imdb.com/title/tt1946502/" target="_blank" >UglyDolls (2019)</a></td>
+                    <td>Sept 14, 2020</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.imdb.com/title/tt0475293/" target="_blank" >High School Musical (2006)</a></td>
+                    <td>Sept 16, 2020</td>
                 </tr>
             </table>
         </div>
