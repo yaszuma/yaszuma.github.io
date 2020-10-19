@@ -31,7 +31,7 @@ body, html {
   text-align: center !important
 }
 
-.tabcontenttable td:nth-child(2) {
+.tabcontenttable td:nth-child(2), .tabcontenttable td:nth-child(3), .tabcontenttable td:nth-child(4){
   text-align: center;
 }
 
@@ -112,8 +112,25 @@ body, html {
         padding: 31.5px;
     }
 
-    .tabcontenttable table, .tabcontenttable th, .tabcontenttable td {
-        font-size: 12px;
+    /* Style the tab buttons */
+    .tablink {
+        padding: 14px 16px;
+        font-size: 15px;
+        width: 25%
+    }
+
+    /* Set default styles for tab content tables */
+    .tabcontenttable {
+        margin-top: 45px;
+        padding: 36px;
+    }
+
+    .tabcontenttable table, .tabcontenttable td {
+        font-size: 8px;
+    }
+
+    .tabcontenttable th {
+        font-size: 10px;
     }
 
     .navbar #topLink a {
