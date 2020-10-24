@@ -97,7 +97,7 @@ ul {list-style-type: none;}
 
 .days li .active {
   padding: 5px;
-  background: #fa3c3c;
+  background: #ffc4c4;
   color: white !important
 }
 
@@ -116,8 +116,8 @@ ul {list-style-type: none;}
 }
 
 .navbar #topLink a {
-    background-color: #fa3c3c !important;
-    color: white !important
+    background-color: #ffc4c4 !important;
+    color: black !important
 }
 
 /* Add media queries for smaller screens */
