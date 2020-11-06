@@ -24,95 +24,129 @@ ul {list-style-type: none;}
 }
 
 .title {
-  margin: 0;
-  padding: 10px 25px;
-  background-color: #fa3c3c;
-  text-align: center;
-  font-family: "Quicksand", "Courier New";
+    margin: 0;
+    padding: 10px 25px;
+    background-color: #fa3c3c;
+    text-align: center;
+    font-family: "Quicksand", "Courier New";
 }
 
 .title ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .title ul li {
-  display: inline-block;
-  width: 100%;
-  color: #000;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-align: center;
+    display: inline-block;
+    width: 100%;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
 }
 
 .month {
-  padding: 70px 0;
-  width: 100%;
-  background: #343A40;
-  text-align: center;
+    padding: 70px 0;
+    width: 100%;
+    background: #343A40;
+    text-align: center;
 }
 
 .month ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .month ul li {
-  color:white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+    color:white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .weekdays {  
-  margin: 0;
-  padding: 10px 0;
-  background-color: #ddd;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
 }
 
 .weekdays li {
-  display: inline-block;
-  width: 13.6%;
-  color: #666;
-  text-align: center;
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
 }
 
 .days {
 
-  padding: 10px 0;
-  background: #eee;
-  margin: 0;
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
 }
 
 .days li {
-  list-style-type: none;
-  display: inline-block;
-  width: 13.6%;
-  text-align: center;
-  margin-bottom: 5px;
-  font-size: 12px;
-  color: #000;
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #000;
 }
 
 .days li .active {
-  padding: 5px;
-  background: #ffc4c4;
-  color: white !important
+    padding: 5px;
+    background: #ffc4c4;
+    color: white !important
 }
 
 .days li .saturday {
-  color: #777;
+    color: #777;
 }
 
 .days li .sunday {
-  color: #F00;
+    color: #F00;  
 }
 
 .bottom {
-  margin: 0;
-  padding: 10px 0;
-  background-color: #343A40;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #343A40;
+}
+
+.letter_filler {
+    background-color: #000;
+    border: 100px solid #000;
+}
+
+.letter_container {
+    background: #000;
+    border: 50px solid #000;
+    height: 100%;
+    position: relative;
+    border-image: url(../images/hearts_border.png) 33% round;
+}
+
+.letter_container li {
+    color: #FFF;
+    text-align: left;
+    font-family: 'Special Elite', cursive;
+    font-size: 17px;
+    padding: 3px 10px;
+}
+
+.letter_container ul #letter_title {
+    color: #FFF;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.letter_container ul #letter_end {
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 10px;
 }
 
 .navbar #topLink a {
@@ -122,13 +156,67 @@ ul {list-style-type: none;}
 
 /* Add media queries for smaller screens */
 @media screen and (max-width:720px) {
-  .weekdays li, .days li {width: 13.1%;}
+    .weekdays li, .days li {width: 13.1%;}
 }
 
 @media screen and (max-width: 420px) {
     .weekdays li, .days li {width: 13.3%;}
-    .days li .active {padding: 2px;}
+    .days li .active {
+        padding: 2px;
+        }
     .coverImage {
         background-image: url("../images/First_Date_Out.jpg");
     }
+    .letter_filler {
+        background-color: #000;
+        border-width: 20px 10px 20px 10px;
+        border-style: solid;
+        border-color: #000;
+    }
+    .letter_container li {
+        font-size: 12px;
+        padding: 4px 20px 3px 0px;
+    }
+    .letter_container ul {
+        padding-left: 30px;
+    }
+    .letter_container ul #letter_title {
+        font-size: 17px;
+        padding-top: 0px;
+        padding-bottom: 15px;
+    }
+
+    /*
+    .letter_filler {
+        background-color: #000;
+        border: 100px solid #000;
+    }
+
+    .letter_container {
+        background: #000;
+        border: 50px solid #000;
+        height: 100%;
+        position: relative;
+        border-image: url(../images/hearts_border.png) 33% round;
+    }
+
+    .letter_container li {
+        color: #FFF;
+        text-align: left;
+        font-family: 'Special Elite', cursive;
+        font-size: 17px;
+        padding: 3px 10px;
+    }
+
+    .letter_container ul #letter_title {
+        color: #FFF;
+        font-size: 25px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .letter_container ul #letter_end {
+        padding-bottom: 10px;
+    }
+    */
 }
