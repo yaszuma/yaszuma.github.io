@@ -1,0 +1,23 @@
+body, html {
+	height: 100%;
+    margin: 0;
+    font-family: "Quicksand", "Courier New";
+    text-align: center;
+}
+
+.active, .active:hover {
+  background-color: #e0bcff !important;
+  color: black !important
+}
+
+@media screen and (max-width: 500px) {
+    
+    .navbar #topLink a {
+        background-color: #e0bcff !important;
+        color: black !important
+    }
+
+    .navbar #iconMenuShows a {
+        color: black !important
+    }
+}
