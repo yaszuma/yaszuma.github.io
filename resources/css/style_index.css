@@ -115,6 +115,10 @@ ul {list-style-type: none;}
     background-color: #343A40;
 }
 
+#secondImage {
+    height: 10%;
+}
+
 .letter_filler {
     background-color: #000;
     border: 100px solid #000;
