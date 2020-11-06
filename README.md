@@ -19,6 +19,11 @@ TYPES OF PAGES
 
 At the moment these are the only up to date pages:
  * index.html
+ * shows.html
+ 
+Pages in progess:
+ * music.html
+ * gallery.html
    
 MAINTAINERS
 -----------
