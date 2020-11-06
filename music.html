@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<!-- Simple CSS -->
+		<link rel="stylesheet" type="text/css" href="resources/css/style_music.css">
 		<link rel="stylesheet" type="text/css" href="resources/css/style_nav.css">
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
 		<link href="https://fonts.googleapis.com/css?family=Quicksand" type="text/css" rel="stylesheet">
@@ -21,19 +22,30 @@
 	<body>
 		<!-- Navigation Bar -->
 		<div class="navbar topnav">
-			<a class="active" id="mainIcon" href="../shows.html"><i class="fa fa-fw fa-tv"></i> Shows</a> 
+            <div id="topLink">
+			    <a class="active" id="mainIcon" href="../music.html"><i class="fa fa-fw fa-tv"></i> Music</a> 
+            </div>
+
 			<div id="myLinks">
 				<a href="../index.html"><i class="fa fa-fw fa-heart"></i> Home</a> 
-				<a class="active" id="mainIconMenu" href="../shows.html"><i class="fa fa-fw fa-tv"></i> Shows</a> 
-				<a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
-				<a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+				<a href="../shows.html"><i class="fa fa-fw fa-tv"></i> Shows</a> 
+				<a class="active" id="mainIconMenu" href="../music.html"><i class="fa fa-fw fa-music"></i> Music</a> 
+                <a href="../gallery.html"><i class="fa fa-fw fa-image"></i> Gallery</a>
 			</div>
-			<a href="javascript:void(0);" class="icon" onclick="myMobileMenu()">
-				<i class="fa fa-bars"></i>
-			</a>
+            
+            <div id="iconMenuShows">
+			    <a href="javascript:void(0);" class="icon" onclick="myMobileMenu()">
+				    <i class="fa fa-bars"></i>
+			    </a>
+            </div>
+			
 		</div>
 		<!-- End of Navigation Bar -->
-		
+
+		<div id="main_video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rj23Vs22urs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+        
         
 	</body>
 </html>
