@@ -11,14 +11,16 @@
         <link rel="stylesheet" type="text/css" href="resources/css/style_wip.css">
 		<link rel="stylesheet" type="text/css" href="resources/css/style_gallery.css">
 		<link rel="stylesheet" type="text/css" href="resources/css/style_nav.css">
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+		
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
 		<link href="https://fonts.googleapis.com/css?family=Quicksand" type="text/css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans" type="text/css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kurale" rel="stylesheet">
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<!-- Simple Scripts -->
 		<script src="resources/scripts/nav.js"></script>
+        <script src="resources/scripts/gallery.js"></script>
 	</head>
 
 	<body>
@@ -44,17 +46,111 @@
 		</div>
 		<!-- End of Navigation Bar -->
 
-        <!-- Under Contruction Cover -->
-        
-        <video autoplay muted loop id="myVideo" poster="../resources/images/vhs.png">
-            <source src="../resources/videos/fehler_vhs.mp4" type="video/mp4">
-        </video>
-        
-        <div class="content">
-            <h1 id="wipTitle">Under Contruction</h1>
+        <!-- Table of Content -->
+
+        <div id="toc_container">
+            <p class="toc_title">Contents</p>
+            <ul class="toc_list">
+                <li><a href="#Favorites">Favorites</a></li>
+                <li><a href="#Second_Point_Header">Second Point Header</a></li>
+            </ul>
+        </div>
+
+        <!-- End of Table of Content -->
+
+        <div class = "coverImage"></div>
+
+        <!-- Slideshow 1 -->
+        <div class="titles">
+            <p id="Favorites">Favorites</p>
         </div>
         
-        <!-- End of Under Contruction Cover -->
+        <div class="slideshow-container">
+            <div class="mySlides1">
+                <a target="_blank" href="../resources/images/favorites/5.jpg">
+                    <img src="../resources/images/favorites/5.jpg">
+                </a>
+            </div>
         
+            <div class="mySlides1">
+                <img src="../resources/images/favorites/1.jpg">
+            </div>
+
+            <div class="mySlides1">
+                <img src="../resources/images/favorites/2.jpg">
+            </div>
+
+            <div class="mySlides1">
+                <img src="../resources/images/favorites/4.jpg">
+            </div>
+
+            <div class="mySlides1">
+                <img src="../resources/images/favorites/6.jpg">
+            </div>
+
+            <div class="mySlides1">
+                <img src="../resources/images/favorites/7.jpg">
+            </div>
+
+            <div class="mySlides1">
+                <img src="../resources/images/favorites/8.jpg">
+            </div>
+
+            <div class="mySlides1">
+                <img src="../resources/images/favorites/9.jpg">
+            </div>
+
+            <div class="mySlides1">
+                <img src="../resources/images/favorites/10.jpg">
+            </div>
+
+            <div class="mySlides1">
+                <img src="../resources/images/favorites/11.jpg">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+
+        <div class="titles"></div>
+
+        <!-- End of Slideshow 1 -->
+
+        <div class = "coverImage"></div>
+
+        <!-- Slideshow 2 -->
+
+        <div class="titles">
+            <p>First Date 2:</p>
+        </div>
+        <div class="slideshow-container">
+        <div class="mySlides2">
+            <img src="../resources/images/First_Date_Out.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+            <img src="../resources/images/First_Date_Out.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+            <img src="../resources/images/First_Date_Out.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+
+        <div class="titles"></div>
+
+        <!-- End of Slideshow 2 -->
+
+        <div class = "coverImage"></div>
+
+        <script>
+            var slideIndex = [1,1];
+            var slideId = ["mySlides1", "mySlides2"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+        </script>
 	</body>
 </html>

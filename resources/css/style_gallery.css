@@ -1,23 +1,183 @@
 body, html {
 	height: 100%;
     margin: 0;
-    font-family: "Quicksand", "Courier New";
-    text-align: center;
+    font-family: 'Kurale', serif;
+    text-align: left;
+    background-image: url("https://i.imgur.com/ojnRyVk.png");
+    background-attachment: fixed;
+    background-size: 500px;
 }
 
 .active, .active:hover {
-  background-color: #e0bcff !important;
+
+  background-color: #bababa !important;
   color: black !important
+  
+  //background-color: #222222 !important;
+  //color: white !important
+}
+
+/* Slideshow Stuff */
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+position: relative;
+margin: auto;
+width: 90%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+left: 2%;
+border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 2%;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+img {
+    width: 100%;
+    border-width: 0px 100px 50px;
+    border-style: solid;
+    border-color: rgb(34, 34, 34);
+}
+
+.titles {
+    background-color: #222;
+    color: #FFF;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 16px, 10px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    width: 90%;
+    margin: auto;
+}
+
+.titles p {
+    margin: 2% auto;
+    text-align: center;
+    width: 90%;
+}
+
+/* End of Slideshow Stuff */
+
+/* Table of Contents */
+
+#toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 4%;
+    font-family: "Quicksand", "Courier New";
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
+}
+
+#toc_container ul{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#toc_container ul li a{
+    color: #bababa;
+    text-decoration: none;
+}
+
+/* End of Table of Contents */
+
+.coverImage {
+	/* Image */
+    background-image: url("https://i.imgur.com/ojnRyVk.png");
+
+	/* Size of Image */
+    height: 10%;
+	width: 100%;
+
+	/* Parallax Scrolling Effect */
+    background-attachment: fixed;
+    background-size: 500px;
+
 }
 
 @media screen and (max-width: 500px) {
     
     .navbar #topLink a {
-        background-color: #e0bcff !important;
+        background-color: #bababa !important;
         color: black !important
     }
 
     .navbar #iconMenuShows a {
         color: black !important
     }
+
+    .prev {
+        left: 10px;
+        top: 50%;
+    }
+
+    .next {
+        right: 10px;
+        top: 50%;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: transparent;
+    }
+
+    .titles p {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    #toc_container {
+        margin-top: 10%;
+    }
+
+    img {
+        border: 0;
+    }
 }
+
