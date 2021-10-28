@@ -1,5 +1,4 @@
-# kent-and-alexis
-Webpage for Kent and Alexis's Relationship
+Webpage for all of Yaszuma's Shops
 
 CONTENTS OF THIS FILE
 ---------------------
@@ -11,17 +10,16 @@ CONTENTS OF THIS FILE
 INTRODUCTION
 ------------
 
-This is basically a blog for a bunch of things that have to do with my 
-relationship with my boyfriend. 
+This is basically a site for all of Yaszuma's Shops
 
 TYPES OF PAGES
 --------------
 
 At the moment these are the only up to date pages:
- * index.html
- * shows.html
  
 Pages in progess:
+ * index.html
+ * shows.html
  * music.html
  * gallery.html
    
@@ -29,4 +27,4 @@ MAINTAINERS
 -----------
 
 Current maintainers:
- * Alexis 
+ * Chikimiko 
