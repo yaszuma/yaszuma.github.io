@@ -12,7 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="resources/css/style_nav.css">
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
 		<link href="https://fonts.googleapis.com/css?family=Quicksand" type="text/css" rel="stylesheet" >
-        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<!-- Simple Scripts -->
@@ -21,28 +21,35 @@
 
 	<body>
 		<!-- Navigation Bar -->
-		<div class="navbar topnav">
-            <div id="topLink">
-			    <a class="active" href="#"><i class="fa fa-fw fa-heart"></i> Home</a> 
-            </div>
 
-		    <div id="myLinks">
-                <a href="../shows.html"><i class="fa fa-fw fa-tv"></i> Shows</a> 
-                <a href="../music.html"><i class="fa fa-fw fa-music"></i> Music</a> 
-                <a href="../gallery.html"><i class="fa fa-fw fa-image"></i> Gallery</a>
-                <!--
-                <div class="dropdown">
-                <button class="dropbtn" onclick="myDropdown()">Dropdown
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-                </div> 
-                -->
-		    </div>
+	   <nav class="navbar">
+	     <!-- LOGO -->
+	     <div class="logo">MUO</div>
+	     <!-- NAVIGATION MENU -->
+	     <ul class="nav-links">
+	       <!-- USING CHECKBOX HACK -->
+	       <input type="checkbox" id="checkbox_toggle" />
+	       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+	       <!-- NAVIGATION MENUS -->
+	       <div class="menu">
+		 <li><a href="/">Home</a></li>
+		 <li><a href="/">About</a></li>
+		 <li class="services">
+		   <a href="/">Services</a>
+		   <!-- DROPDOWN MENU -->
+		   <ul class="dropdown">
+		     <li><a href="/">Dropdown 1 </a></li>
+		     <li><a href="/">Dropdown 2</a></li>
+		     <li><a href="/">Dropdown 2</a></li>
+		     <li><a href="/">Dropdown 3</a></li>
+		     <li><a href="/">Dropdown 4</a></li>
+		   </ul>
+		 </li>
+		 <li><a href="/">Pricing</a></li>
+		 <li><a href="/">Contact</a></li>
+	       </div>
+	     </ul>
+	   </nav>
             
             <a href="javascript:void(0);" class="icon" onclick="myMobileMenu()">
                 <i class="fa fa-bars"></i>
