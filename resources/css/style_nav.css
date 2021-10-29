@@ -1,7 +1,15 @@
 .navbar {
   overflow: hidden;
-  background-color: #343A40;
-  font-family: "Quicksand", "Courier New";
+  background-color: #990000;
+  font-family: "Futura";
+}
+
+.navbar-brand a:hover{
+  color: white;
+}
+
+.navbar-brand a{
+  font-weight: bolder;
 }
 
 .navbar a {
@@ -13,29 +21,21 @@
   text-decoration: none;
 }
 
-.topnav a.icon {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-color: transparent;
-  color: white;
+.navbar-nav li {
+  float: right;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: black;
+.navbar-main a:hover {
+  color: #ffac12;
+}
+
+.active a{
+  color: #ffac12;
 }
 
 .navbar #topLink a:hover {
-  background-color: #fa3c3c 
-} 
-
-
-.topnav a.icon:hover {
-  background-color: transparent;
-  color: white;
+  background-color: #fa3c3c
 }
-
 
 #mainIcon {
   display: none;
@@ -49,7 +49,7 @@
 
 .dropdown .dropbtn {
   cursor: pointer;
-  font-size: 16px;  
+  font-size: 16px;
   border: none;
   outline: none;
   color: white;
@@ -93,7 +93,7 @@
         display: block;
     }
     */
-    
+
     .topnav #myLinks {
         display: none;
     }
