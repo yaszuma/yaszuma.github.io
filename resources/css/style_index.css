@@ -1,25 +1,25 @@
 body, html {
-		height: 100%;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-		font-weight: lighter;
+	height: 100%;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
 }
 
 ul {list-style-type: none;}
 
 .navbar #topLink a {
-    background-color: #ffc4c4 !important;
-    color: black !important
+	background-color: #ffc4c4 !important;
+	color: black !important
 }
 
 .center {
-	  display: block;
-	  margin-left: auto;
-	  margin-right: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .maintext {
-		display: block;
+	display: block;
 }
 
 .maintext h1 {
@@ -40,10 +40,10 @@ ul {list-style-type: none;}
 }
 
 .maintext img{
-	  margin-left: auto;
-	  margin-right: auto;
-		margin-top: 7%;
-		margin-bottom: 7%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 7%;
+	margin-bottom: 7%;
 }
 
 /* Add media queries for smaller screens */
