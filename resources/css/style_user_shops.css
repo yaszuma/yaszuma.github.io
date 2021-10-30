@@ -74,6 +74,15 @@ ul {list-style-type: none;}
 	width: 30px;
 }
 
+.maintext h3 {
+	font-size: 20px;
+	text-align: left;
+	font-weight: normal;
+	margin-left: 15%;
+	margin-right: 15%;
+	letter-spacing: 2px;
+}
+
 .maintext button {
 	margin-top: 1%;
 	margin-bottom: 1%;
@@ -99,11 +108,12 @@ ul {list-style-type: none;}
 /* Add media queries for smaller screens */
 @media screen and (max-width:720px) {
 	.maintext h1 {
-		font-size: 45px;
+		font-size: 30px;
 		margin-left: 5%;
 		margin-right: 5%;
 		margin-top: 9%;
 		margin-bottom: 7%;
+		font-weight: bold;
 	}
 
   .maintext p {
@@ -113,5 +123,40 @@ ul {list-style-type: none;}
 
 	.button {
 		margin-top: 2%;
+	}
+
+	.maintext h2 {
+		font-size: 25px;
+		margin-left: 4%;
+		margin-right: 2%;
+	}
+
+	.maintext h3 {
+		font-size: 15px;
+		margin-left: 4%;
+		margin-right: 2%;
+	}
+
+	.maintext table {
+		margin-left: 4%;
+		margin-right: 2%;
+		margin-top: 2%;
+		width: 94%;
+	}
+
+	.maintext th {
+		font-size: 17px;
+	}
+
+	.maintext td {
+		font-size: 13px;
+	}
+
+	.product {
+		width: 85%;
+	}
+
+	.price {
+		width: 15%;
 	}
 }
