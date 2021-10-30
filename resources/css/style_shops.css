@@ -26,10 +26,9 @@ ul {list-style-type: none;}
 	text-align: center;
 	font-family: "Montserrat";
 	font-size: 60px;
-	margin-top: 10%;
+	margin-top: 5%;
 	margin-left: 20%;
 	margin-right: 20%;
-	margin-bottom: 5%;
 }
 
 .maintext p {
@@ -37,22 +36,22 @@ ul {list-style-type: none;}
 	text-align: center;
 	margin-left: 15%;
 	margin-right: 15%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 	letter-spacing: 2px;
 }
 
 .maintext button {
-	margin-top: 7%;
-	margin-bottom: 7%;
+	margin-top: 1%;
+	margin-bottom: 1%;
 }
 
 .btn {
-  border: none;
-  background-color: #990000;
-  padding: 14px 40%;
+	border: 2px solid black;
   font-size: 16px;
   cursor: pointer;
   display: inline-block;
-	border-radius: 12px;
+	border-radius: 20px;
 }
 
 .button {
@@ -62,7 +61,7 @@ ul {list-style-type: none;}
 }
 
 /* On mouse-over */
-.btn:hover {background: #6769d6;}
+.btn:hover {background: #990000; color: white}
 
 /* Add media queries for smaller screens */
 @media screen and (max-width:720px) {
