@@ -41,6 +41,35 @@ ul {list-style-type: none;}
 	letter-spacing: 2px;
 }
 
+.maintext h2 {
+	font-family: "Montserrat";
+	margin-left: 15%;
+	margin-right: 15%;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.maintext table {
+	font-family: "Montserrat";
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 2%;
+	width: 70%;
+}
+
+.maintext th {
+	font-family: "Montserrat";
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.maintext td {
+	font-family: "Montserrat";
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
 .maintext button {
 	margin-top: 1%;
 	margin-bottom: 1%;
