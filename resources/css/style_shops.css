@@ -70,6 +70,10 @@ ul {list-style-type: none;}
 	padding-bottom: 10px;
 }
 
+.price {
+	width: 30px;
+}
+
 .maintext button {
 	margin-top: 1%;
 	margin-bottom: 1%;
@@ -109,5 +113,34 @@ ul {list-style-type: none;}
 
 	.button {
 		margin-top: 2%;
+	}
+
+	.maintext h2 {
+		font-size: 25px;
+		margin-left: 4%;
+		margin-right: 2%;
+	}
+
+	.maintext table {
+		margin-left: 4%;
+		margin-right: 2%;
+		margin-top: 2%;
+		width: 94%;
+	}
+
+	.maintext th {
+		font-size: 17px;
+	}
+
+	.maintext td {
+		font-size: 13px;
+	}
+
+	.product {
+		width: 85%;
+	}
+
+	.price {
+		width: 15%;
 	}
 }
