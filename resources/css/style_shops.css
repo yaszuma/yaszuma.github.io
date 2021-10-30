@@ -61,23 +61,24 @@ ul {list-style-type: none;}
 }
 
 /* On mouse-over */
-.btn:hover {background: #990000; color: white}
+.btn:hover {background: #990000; color: white;}
 
 /* Add media queries for smaller screens */
 @media screen and (max-width:720px) {
 	.maintext h1 {
-		font-size: 35px;
+		font-size: 45px;
 		margin-left: 5%;
 		margin-right: 5%;
-		margin-top: 7%;
+		margin-top: 9%;
 		margin-bottom: 7%;
 	}
 
   .maintext p {
 		font-size: 20px;
+		margin-bottom: 11%;
 	}
 
 	.button {
-		margin-top: 7%;
+		margin-top: 2%;
 	}
 }
