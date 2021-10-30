@@ -87,3 +87,26 @@ div.desc {
 
 /* On mouse-over */
 .btn:hover {background: #990000; color: white;}
+
+@media screen and (max-width:720px) {
+	.maintext h1 {
+		font-size: 33px;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 13%;
+        font-weight: bold;
+	}
+
+  .maintext h2 {
+		font-size: 27px;
+	}
+
+  div.title {
+      font-size: 10px;
+      padding-bottom: 5px;
+  }
+
+  div.desc {
+      font-size: 10px;
+  }
+}
