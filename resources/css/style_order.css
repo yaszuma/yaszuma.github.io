@@ -25,26 +25,44 @@ ul {list-style-type: none;}
 .maintext h1 {
 	text-align: center;
 	font-family: "Montserrat";
-	font-size: 75px;
+	font-size: 60px;
+	margin-top: 10%;
 	margin-left: 20%;
 	margin-right: 20%;
+	margin-bottom: 5%;
 }
 
 .maintext p {
 	font-size: 30px;
-	text-align: left;
+	text-align: center;
 	margin-left: 15%;
 	margin-right: 15%;
-	margin-top: 5%;
 	letter-spacing: 2px;
 }
 
-.maintext img {
-	margin-left: auto;
-	margin-right: auto;
+.maintext button {
 	margin-top: 7%;
 	margin-bottom: 7%;
 }
+
+.btn {
+  border: none;
+  background-color: #990000;
+  padding: 14px 40%;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+	border-radius: 12px;
+}
+
+.button {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* On mouse-over */
+.btn:hover {background: #6769d6;}
 
 /* Add media queries for smaller screens */
 @media screen and (max-width:720px) {
