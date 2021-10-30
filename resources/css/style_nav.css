@@ -4,6 +4,10 @@
   font-family: "Futura";
 }
 
+.container-fluid {
+    background-color: #990000;
+}
+
 .navbar-default {
   background: #990000;
 }
