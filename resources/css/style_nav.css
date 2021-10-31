@@ -49,4 +49,8 @@
   .navbar-nav li {
     float: left;
   }
+	a.navbar-brand {
+		font-size: 20px;
+    font-weight: bold;
+	}
 }
